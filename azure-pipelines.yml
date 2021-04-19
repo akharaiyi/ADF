@@ -41,7 +41,7 @@ steps:
     uname -a 
   displayName:  'Run another scripts'  
 
-steps:
+
 - task: AzureFileCopy@4
   displayName: 'AzureBlob File Copy'
   inputs:
