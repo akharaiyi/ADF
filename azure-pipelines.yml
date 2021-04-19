@@ -42,15 +42,6 @@ steps:
   displayName:  'Run another scripts'  
 
 
-- task: AzureFileCopy@4
-  displayName: 'AzureBlob File Copy'
-  inputs:
-    SourcePath: '$(Agent.TempDirectory)/template.zip'
-    azureSubscription: 'ADF_CONN'
-    Destination: AzureBlob
-    storage: testaccountakhigbe
-    ContainerName: newctgupload
-
 
 
 
