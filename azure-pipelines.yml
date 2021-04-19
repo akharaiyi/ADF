@@ -35,17 +35,21 @@ steps:
    cat parameters.json
   displayName: 'Command Line Script'
 
-
 - script: |
     mkdir filenew
     ls -R 
     uname -a 
   displayName:  'Run another scripts'  
 
-- script: |
-    ls -ltra
-    ls -R
-  displayName: 'Unzip' 
+steps:
+- task: AzureFileCopy@4
+  displayName: 'AzureBlob File Copy'
+  inputs:
+    SourcePath: '$(Agent.TempDirectory)/template.zip'
+    azureSubscription: 'ADF_CONN'
+    Destination: AzureBlob
+    storage: testaccountakhigbe
+    ContainerName: newctgupload
 
 
 
