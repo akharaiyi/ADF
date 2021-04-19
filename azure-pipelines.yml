@@ -43,8 +43,7 @@ steps:
     uname -a 
   displayName:  'Run another scripts'  
 
-- script: |
-    apt-get install  zip -yq
+- script: |ß
     if [ -d filenew ]; then cd filenew && unzip template.zip fi;
     ls -R
   displayName: Unzip 
