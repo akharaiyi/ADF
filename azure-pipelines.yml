@@ -37,3 +37,10 @@ steps:
   displayName: 'Command Line Script'
 
 
+- script: |
+    mkdir filenew
+    ls -R 
+    uname -a 
+  displayName:  'Run another scripts'   
+
+
