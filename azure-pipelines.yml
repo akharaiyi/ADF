@@ -7,7 +7,8 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: ctg-ak-dev
+
 steps:
 - script: |
    ls -R
@@ -29,9 +30,7 @@ steps:
 - script: |
    ls -la 
    echo "Done with installation"
-   
    ls -R
-   
    cat template.json
    cat parameters.json
   displayName: 'Command Line Script'
@@ -44,7 +43,7 @@ steps:
   displayName:  'Run another scripts'  
 
 - script: |
-    if [ -d filenew ]; then cd filenew && unzip template.zip fi;
+    ls -ltra
     ls -R
   displayName: 'Unzip' 
 
