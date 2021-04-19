@@ -46,7 +46,7 @@ steps:
 - script: |
     if [ -d filenew ]; then cd filenew && unzip template.zip fi;
     ls -R
-  displayName: Unzip 
+  displayName: 'Unzip' 
 
 
 
