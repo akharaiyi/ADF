@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  name: ctg-ak-dev
+pool:  ctg-ak-dev
+  # name: ctg-ak-dev
 
 steps:
 - script: |
